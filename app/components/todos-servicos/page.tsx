@@ -1,23 +1,39 @@
 "use client";
+
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
-export default function Servicos() {
+export default function TodosServicos() {
   const services = [
     {
-      title: "Quero me aposentar",
-      description: "Planejamento e pedido de aposentadoria para garantir seu benefício.",
+      title: "Planejamento de Aposentadoria",
+      description: "Garanta a melhor aposentadoria com um planejamento adequado.",
       image: "/card1.webp",
     },
     {
-      title: "Quero um auxílio",
-      description: "Auxílio-doença, auxílio-maternidade e outros benefícios previdenciários.",
+      title: "Revisão de Benefícios",
+      description: "Corrija valores e garanta seus direitos previdenciários.",
       image: "/card2.webp",
     },
     {
-      title: "Entrar com uma ação",
-      description: "Revisões, pedidos negados e processos para garantir seus direitos.",
+      title: "Auxílio-Doença",
+      description: "Solicitação e revisão do auxílio para quem precisa.",
+      image: "/card3.png",
+    },
+    {
+      title: "Pensão por Morte",
+      description: "Apoio jurídico para familiares solicitarem o benefício.",
+      image: "/card1.webp",
+    },
+    {
+      title: "Benefício Assistencial (BPC/LOAS)",
+      description: "Solicitação do benefício para idosos e pessoas com deficiência.",
+      image: "/card2.webp",
+    },
+    {
+      title: "Ação Contra o INSS",
+      description: "Defenda seus direitos na justiça em caso de negativa.",
       image: "/card3.png",
     },
   ];
@@ -25,19 +41,10 @@ export default function Servicos() {
   return (
     <section className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Título da seção com botão "Ver mais serviços" */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-400 text-center sm:text-left">
-            Saiba como nosso escritório pode te ajudar!
-          </h2>
-
-          {/* Botão "Ver mais serviços" */}
-          <Link href="/todos-servicos">
-            <button className="mt-4 sm:mt-0 flex items-center gap-2 text-[#C3A039] font-semibold hover:text-yellow-600 transition">
-              Ver mais serviços <FaArrowRight />
-            </button>
-          </Link>
-        </div>
+        {/* Título da página */}
+        <h1 className="text-3xl font-bold text-center text-gray-400 mb-10">
+          Todos os Serviços
+        </h1>
 
         {/* Grid de serviços */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -67,6 +74,15 @@ export default function Servicos() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Botão para voltar à página principal */}
+        <div className="mt-12 text-center">
+          <Link href="/Servicos">
+            <button className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-800 transition">
+              Voltar para a Página Inicial
+            </button>
+          </Link>
         </div>
       </div>
     </section>
