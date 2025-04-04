@@ -27,7 +27,7 @@ export default function Servicos() {
       <div className="max-w-6xl mx-auto">
         {/* Título da seção com botão "Ver mais serviços" */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-400 text-center sm:text-left">
+          <h2 id="ser" className="text-2xl sm:text-3xl font-bold text-gray-400 text-center sm:text-left">
             Saiba como nosso escritório pode te ajudar!
           </h2>
 
