@@ -78,7 +78,7 @@ export default function TodosServicos() {
 
         {/* Botão para voltar à página principal */}
         <div className="mt-12 text-center">
-          <Link href="/Servicos">
+          <Link href="/">
             <button className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-800 transition">
               Voltar para a Página Inicial
             </button>
