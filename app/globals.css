@@ -8,3 +8,19 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes glow-pulse {
+  0%, 100% {
+    background-color: #C3A039;
+    box-shadow: 0 0 0px #fff0;
+  }
+  50% {
+    background-color: #e0bb4c;
+    box-shadow: 0 0 15px #e0bb4c66;
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}

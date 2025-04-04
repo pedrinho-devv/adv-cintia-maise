@@ -30,9 +30,10 @@ export default function Banner() {
 
         {/* Botões com layout diferente no mobile */}
         <div className="mt-6 flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
-          <button className="px-6 py-3 w-full sm:w-auto bg-[#C3A039] text-white font-semibold rounded-lg hover:bg-yellow-600 transition">
+          <button className="px-6 py-3 w-full sm:w-auto text-white font-semibold rounded-lg hover:bg-yellow-600 transition glow-pulse">
             Fale Conosco
           </button>
+
           <button className="px-6 py-3 w-full sm:w-auto border border-[#C3A039] text-[#C3A039] font-semibold rounded-lg hover:bg-[#C3A039] hover:text-white transition">
             Saiba Mais
           </button>

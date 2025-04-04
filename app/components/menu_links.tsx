@@ -30,7 +30,7 @@ export default function Navbar() {
         </ul>
 
         {/* Botão de Menu Mobile */}
-        <button onClick={toggleMenu} className="md:hidden text-white text-2xl z-50">
+        <button onClick={toggleMenu} className="md:hidden text-white text-2xl z-3">
           {isOpen ? "✖" : "☰"}
         </button>
       </nav>
