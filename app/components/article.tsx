@@ -17,12 +17,14 @@ export default function ContentArea() {
 
   useEffect(() => {
     async function fetchData() {
-      const query = `*[_type == 'post'][0...3] | order(_createdAt desc){
-        title,
-        "image": mainImage.asset->url,
-        "category": categories[0]->title,
-        "slug": slug.current
-      }`;
+      const query = `*[_type == "post"][0...4]{
+  _id,
+    title,
+    "slug": slug.current,
+    "image": mainImage.asset->url,
+    "category": categories[0]->title
+
+}`;
 
       const data = await client.fetch(query);
       setArticles(data);
