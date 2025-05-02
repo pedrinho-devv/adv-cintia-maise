@@ -34,7 +34,7 @@ export default function ContentArea() {
   }, []);
 
   return (
-    <section className="bg-[#C3A039] p-6 sm:p-10">
+    <section id="blog" className="bg-[#C3A039] p-6 sm:p-10">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-white text-2xl font-bold">
           Saiba mais sobre seus direitos

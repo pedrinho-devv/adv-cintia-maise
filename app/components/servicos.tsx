@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Servicos() {
   const services = [
@@ -23,26 +24,43 @@ export default function Servicos() {
   ];
 
   return (
-    <section className="py-12 px-4">
+    <section id="services" className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Título da seção com botão "Ver mais serviços" */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
-          <h2 id="ser" className="text-2xl sm:text-3xl font-bold text-gray-400 text-center sm:text-left">
+          <motion.h2
+            id="ser"
+            className="text-2xl sm:text-3xl font-bold text-gray-400 text-center sm:text-left"
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             Saiba como nosso escritório pode te ajudar!
-          </h2>
+          </motion.h2>
 
           {/* Botão "Ver mais serviços" */}
           <Link href="/todos-servicos">
-            <button className="mt-4 sm:mt-0 flex items-center gap-2 text-[#C3A039] font-semibold hover:text-yellow-600 transition">
+            <motion.button
+              className="mt-4 sm:mt-0 flex items-center gap-2 text-[#C3A039] font-semibold hover:text-yellow-600 transition"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
               Ver mais serviços <FaArrowRight />
-            </button>
+            </motion.button>
           </Link>
         </div>
 
         {/* Grid de serviços */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <motion.div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 * index }}
+            >
               {/* Imagem */}
               <div className="h-40 sm:h-48 w-full relative">
                 <Image
@@ -60,12 +78,17 @@ export default function Servicos() {
 
                 {/* Botão responsivo */}
                 <Link href="/contato">
-                  <button className="mt-4 w-full sm:w-auto px-5 py-3 bg-[#C3A039] text-white font-semibold rounded-lg hover:bg-yellow-600 transition">
+                  <motion.button
+                    className="mt-4 w-full sm:w-auto px-5 py-3 bg-[#C3A039] text-white font-semibold rounded-lg hover:bg-yellow-600 transition"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.4 }}
+                  >
                     Fale com a Advogada
-                  </button>
+                  </motion.button>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
