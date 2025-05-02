@@ -10,9 +10,9 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -4.425,
-  lng: -41.46,
-};
+    lat: -4.4311,
+    lng: -41.4517,
+  };
 
 export default function MyComponent() {
   const mapRef = useRef<google.maps.Map | null>(null);
