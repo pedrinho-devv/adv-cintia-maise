@@ -29,13 +29,6 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"], // Imagem otimizada para o Open Graph
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image", // Tipo de cartão do Twitter
-    title: "Advogada Previdenciarista Cintia Maise",
-    description:
-      "Consultoria jurídica especializada em aposentadoria, auxílios e benefícios. Fale com a Advogada Cíntia Maise e resolva sua situação previdenciária.",
-    images: ["/og-image.jpg"], // Imagem otimizada para o Twitter Card
-  },
 };
 
 export default function RootLayout({

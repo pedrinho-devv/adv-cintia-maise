@@ -4,7 +4,7 @@ import MyComponent from "./map";
 
 export default function RetirementBanner() {
   return (
-    <section id="maps" className="bg-[#0C2433] text-white px-6 py-12 flex flex-col lg:flex-row gap-10 lg:gap-16 justify-between items-start lg:items-center">
+    <section id="maps" className="bg-[#142C38] text-white px-6 py-12 flex flex-col lg:flex-row gap-10 lg:gap-16 justify-between items-start lg:items-center">
       {/* Mapa */}
       <div className="w-full lg:w-1/2 min-h-[400px]">
         <MyComponent />

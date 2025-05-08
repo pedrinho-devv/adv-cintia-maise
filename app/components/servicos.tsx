@@ -8,17 +8,20 @@ export default function Servicos() {
   const services = [
     {
       title: "Quero me aposentar",
-      description: "Planejamento e pedido de aposentadoria para garantir seu benefício.",
+      description:
+        "Planejamento e pedido de aposentadoria para garantir seu benefício.",
       image: "/card1.webp",
     },
     {
       title: "Quero um auxílio",
-      description: "Auxílio-doença, auxílio-maternidade e outros benefícios previdenciários.",
+      description:
+        "Auxílio-doença, auxílio-maternidade e outros benefícios previdenciários.",
       image: "/card2.webp",
     },
     {
       title: "Entrar com uma ação",
-      description: "Revisões, pedidos negados e processos para garantir seus direitos.",
+      description:
+        "Revisões, pedidos negados e processos para garantir seus direitos.",
       image: "/card3.png",
     },
   ];
@@ -67,13 +70,16 @@ export default function Servicos() {
                   src={service.image}
                   alt={service.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
               </div>
 
               {/* Conteúdo */}
               <div className="p-6 text-left">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{service.title}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-800">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600 mt-2">{service.description}</p>
 
                 {/* Botão responsivo */}

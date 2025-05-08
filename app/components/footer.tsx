@@ -4,7 +4,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa"; // Importando os ícon
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-[#142C38] text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         
         {/* Logo e descrição */}
