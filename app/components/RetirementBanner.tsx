@@ -31,7 +31,7 @@ export default function RetirementBanner() {
           <MapPin size={16} className="text-yellow-400 mt-1" />
           <span>
             Rua Santa Madalena, n° 132, sala 04.04, Edifício Opala Center,
-            Bairro Cidade Alta, Picos/PI. <br />
+            Bairro Cidade Alta, PedroII/PI. <br />
             (CNPJ: 33.566.808)
           </span>
         </div>
