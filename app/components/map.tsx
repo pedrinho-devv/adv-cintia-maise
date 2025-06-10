@@ -33,7 +33,7 @@ export default function MyComponent() {
   if (!isLoaded) return <p className="text-white">Carregando mapa...</p>;
 
   return (
-    <div className="rounded-md overflow-hidden shadow-lg">
+    <div id="map" className="rounded-md overflow-hidden shadow-lg">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

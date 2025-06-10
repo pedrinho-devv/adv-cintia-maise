@@ -53,26 +53,26 @@ export function Menu_links() {
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
             <Link to="sobre" smooth={true} offset={50} duration={500}>
-              Sobre Mim
+              Menu
             </Link>
           </li>
           <li>
-            <Link to="efeitos" smooth={true} offset={50} duration={500}>
-              Efeitos
+            <Link to="services" smooth={true} offset={50} duration={500}>
+              Serviços
             </Link>
           </li>
           <li>
-            <Link to="planos" smooth={true} offset={50} duration={500}>
-              Planos
+            <Link to="blog" smooth={true} offset={50} duration={500}>
+              Blog
             </Link>
           </li>
           <li>
-            <Link to="faq" smooth={true} offset={50} duration={500}>
-              FAQ
+            <Link to="about" smooth={true} offset={50} duration={500}>
+             Sobre Mim
             </Link>
           </li>
           <li>
-            <Link to="contato" smooth={true} offset={50} duration={500}>
+            <Link to="map" smooth={true} offset={50} duration={500}>
               Contato
             </Link>
           </li>

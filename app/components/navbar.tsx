@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import banner from "../../public/mainbanner.jpg";
+import banner from "../../public/ba.jpg";
 import { motion } from "framer-motion";
 
 export default function Banner() {
