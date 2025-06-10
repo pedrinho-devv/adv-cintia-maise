@@ -115,7 +115,7 @@ export function Menu_links() {
                 offset={50}
                 duration={500}
               >
-                services
+                Serviços
               </Link>
             </li>
             <li>
